@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="616.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line endX="346.0" layoutX="108.0" layoutY="37.0" startX="-108.0" stroke="#d0cccc" />
+      <TableView fx:id="groupTable" layoutY="66.0" prefHeight="550.0" prefWidth="454.0">
+         <columns>
+            <TableColumn fx:id="groupName" prefWidth="274.0" text="group name" />
+            <TableColumn fx:id="numberOfMembers" prefWidth="126.0" text="number of members" />
+            <TableColumn fx:id="button" prefWidth="52.0" text="action" />
+         </columns>
+      </TableView>
+      <MenuButton fx:id="addButton" alignment="CENTER" contentDisplay="RIGHT" layoutX="415.0" layoutY="4.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="35.0" style="-fx-background-color: gray;" stylesheets="@AccountProfile.css" text="+" textAlignment="RIGHT">
+         <items>
+            <MenuItem fx:id="addFriendsButton" mnemonicParsing="false" onAction="#addFriends" text="Add Friends" />
+            <MenuItem fx:id="addGroupsButton" mnemonicParsing="false" onAction="#addGroups" text="Add Groups" />
+            <MenuItem fx:id="createGroupButton" mnemonicParsing="false" onAction="#createGroup" text="Create Group" />
+         </items>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </MenuButton>
+      <Label layoutX="207.0" layoutY="2.0" text="UniChat" textFill="#615858">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="240.0" layoutY="37.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="211.0" style="-fx-background-color: green;" text="Groups" />
+      <Button fx:id="changeToFriend" alignment="CENTER" layoutX="1.0" layoutY="37.0" mnemonicParsing="false" onAction="#changeToFriend" prefHeight="29.0" prefWidth="236.0" style="-fx-background-color: gray;" text="Friends" />
+      <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="174.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Resources/uob_logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="logoutButton" layoutX="7.0" layoutY="4.0" mnemonicParsing="false" onAction="#logout" prefHeight="29.0" prefWidth="60.0" style="-fx-background-color: grey;" text="Logout" />
+   </children>
+</AnchorPane>
