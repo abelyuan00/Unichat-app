@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="265.0" style="-fx-background-color: fbf6e0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LoginController">
+   <children>
+      <Button fx:id="loginButton" layoutX="19.0" layoutY="385.0" mnemonicParsing="false" onAction="#login" prefHeight="35.0" prefWidth="228.0" style="-fx-border-radius: 5em; -fx-background-color: #3b5998; -fx-background-radius: 5em;" text="Log In" textFill="WHITE">
+         <font>
+            <Font size="11.0" />
+         </font></Button>
+      <Button layoutX="19.0" layoutY="428.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="228.0" style="-fx-border-radius: 5em; -fx-background-color: black; -fx-background-radius: 5em;" text="Canvas" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <TextField fx:id="loginUsername" layoutX="15.0" layoutY="175.0" prefHeight="35.0" prefWidth="235.0" promptText="Username" style="-fx-border-radius: 5em; -fx-background-radius: 5em;">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="loginPassword" layoutX="15.0" layoutY="228.0" onAction="#login" prefHeight="35.0" prefWidth="235.0" promptText="Password" style="-fx-border-radius: 5em; -fx-background-radius: 5em;">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="54.0" layoutY="361.0" text="Don't have an account yet?">
+         <font>
+            <Font name="System Italic" size="9.0" />
+         </font>
+      </Label>
+      <Label fx:id="signupButton" layoutX="170.0" layoutY="360.0" onMouseClicked="#signup" text=" Register" textFill="#3b5998">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="277.0" prefHeight="11.0" prefWidth="88.0" text="Forgot Password?" textFill="#3b5998">
+         <font>
+            <Font name="System Italic" size="9.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>

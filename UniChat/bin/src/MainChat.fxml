@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainChatController">
+   <children>
+      <Pane prefHeight="68.0" prefWidth="417.0" style="-fx-background-color: #3b5998;">
+         <children>
+            <Label fx:id="currentConversationName" layoutX="82.0" layoutY="16.0" prefHeight="37.0" prefWidth="268.0" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="conversationMenu" fitHeight="25.0" fitWidth="25.0" layoutX="361.0" layoutY="22.0" onMouseClicked="#conversationOptions" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Resources/info.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="profilePicture" fill="WHITE" layoutX="47.0" layoutY="34.0" radius="22.0" stroke="#00ffc3" strokeType="INSIDE" />
+         </children>
+      </Pane>
+      <Pane layoutY="648.0" prefHeight="68.0" prefWidth="417.0" style="-fx-background-color: #3b5998;">
+         <children>
+            <TextField fx:id="messageBox" layoutX="17.0" layoutY="19.0" onAction="#keyboardMessageSend" prefHeight="31.0" prefWidth="313.0" promptText="Type a message" style="-fx-border-radius: 5em;" />
+            <ImageView fx:id="messageSendButton" fitHeight="31.0" fitWidth="31.0" layoutX="359.0" layoutY="19.0" onMouseClicked="#keyboardMessageSend" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Resources/send.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ScrollPane fx:id="conversationPane" hbarPolicy="NEVER" layoutY="68.0" prefHeight="580.0" prefWidth="417.0" vbarPolicy="ALWAYS" vvalue="1.0">
+         <content>
+            <VBox fx:id="conversationBox" prefHeight="578.0" prefWidth="414.0" spacing="5.0" style="-fx-background-color: fbf6e0;" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
