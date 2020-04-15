@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="265.0" style="-fx-background-color: fbf6e0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SignupController">
+   <children>
+      <Button fx:id="register" layoutX="16.0" layoutY="428.0" mnemonicParsing="false" onAction="#signup" prefHeight="35.0" prefWidth="100.0" style="-fx-border-radius: 5em; -fx-background-color: #3b5998; -fx-background-radius: 5em;" text="Register" textFill="WHITE">
+         <font>
+            <Font size="11.0" />
+         </font></Button>
+      <Button fx:id="photo" layoutX="143.0" layoutY="428.0" mnemonicParsing="false" onAction="#uploadImage" prefHeight="35.0" prefWidth="107.0" style="-fx-border-radius: 5em; -fx-background-color: black; -fx-background-radius: 5em;" text="Photo" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <TextField fx:id="signupFirstname" layoutX="15.0" layoutY="120.0" prefHeight="35.0" prefWidth="235.0" promptText="First Name" style="-fx-border-radius: 5em; -fx-background-radius: 5em;">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="signupLastname" layoutX="15.0" layoutY="163.0" prefHeight="35.0" prefWidth="235.0" promptText="Surname" style="-fx-border-radius: 5em; -fx-background-radius: 5em;">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="courseType" layoutX="15.0" layoutY="204.0" prefHeight="35.0" prefWidth="235.0" promptText="Course Type" style="-fx-border-radius: 5em; -fx-background-radius: 5em;">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="courseName" layoutX="15.0" layoutY="246.0" prefHeight="35.0" prefWidth="235.0" promptText="Course Name" style="-fx-border-radius: 3em; -fx-background-radius: 3em;">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="email" layoutX="16.0" layoutY="290.0" prefHeight="35.0" prefWidth="235.0" promptText="Email" style="-fx-border-radius: 5em; -fx-background-radius: 5em;">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="psw" layoutX="15.0" layoutY="332.0" prefHeight="35.0" prefWidth="235.0" promptText="Password" style="-fx-border-radius: 5em; -fx-background-radius: 5em;">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="pswagain" layoutX="15.0" layoutY="373.0" prefHeight="35.0" prefWidth="235.0" promptText="Confirm Password" style="-fx-border-radius: 5em; -fx-background-radius: 5em;">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </PasswordField>
+      <ImageView fx:id="imageview" fitHeight="86.0" fitWidth="235.0" layoutX="13.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="signupStatus" alignment="CENTER" layoutX="103.0" layoutY="237.0" prefHeight="23.0" prefWidth="153.0" textFill="#276811">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>
